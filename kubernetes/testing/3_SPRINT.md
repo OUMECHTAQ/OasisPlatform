@@ -30,9 +30,9 @@ Run the platform using the default kubernetes helm charts (via minikube), this s
 | 8        | <ul><li> User `A` credentials </li><li> auth request </li><li> Wait for token timeout </li><li> auth request  </li></ul> | Token timeout error | test token timeout  |
 | 9        | <ul><li> User `A` </li><li> Create/Upload portfolio </li></ul> | Successful portfolio upload | Test portfolio creation |
 | 10       | <ul><li> User `B` </li><li> Create an analysis </li></ul>  | Successful analysis creation | Using the portfolio from step `9` create a new analysis |
-| 11       | <ul><li> User `B` </li><li> Delete user `B` (keycloak) | User `B` is deleted in OasisDB and analysis is cascade deleted | Check Sync delete via keycloak. |
-| 12       | <ul><li> User `B` </li><li> Delete user `A` (OasisAPI) | User `A` is deleted in Keycloak and portfolio is cascade deleted | Check Sync delete via Oasis API |
-| 13       | <ul><li> Create New User `A` (keycloak)</li><li> 1 auth request (OasisAPI) </li></ul>  |  Successful user auth | create new using with the same account name and check sync between `keycloak` --> `OasisDB` |
-| 13       | <ul><li> Create New User `B` (OasisAPI)</li><li> 1 auth request (OasisAPI) </li></ul>  |  Successful user auth | create new using with the same account name and check sync between `OasisDB` --> `keycloak` |
+| 11       | <ul><li> User `B`  </li><li> Delete user `B` (keycloak)  </li><li> auth request </li></ul> | User `B` access rejected | Check account access revoked |
+| 12       | <ul><li> User `A` </li><li> Delete user `A` (OasisAPI)  </li><li> auth request </li></ul>  | User `A` is recreated and access Successful | Check  |
+| 13       | <ul><li> Create User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth with new credentials |Check that updating credentials works on inactive user |
+| 13       | <ul><li> Update User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth | Check that updating credentials works on active user |
 
 
