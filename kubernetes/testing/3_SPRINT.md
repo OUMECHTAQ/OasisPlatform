@@ -33,6 +33,6 @@ Run the platform using the default kubernetes helm charts (via minikube), this s
 | 11       | <ul><li> User `B`  </li><li> Delete user `B` (keycloak)  </li><li> auth request </li></ul> | User `B` access rejected | Check account access revoked |
 | 12       | <ul><li> User `A` </li><li> Delete user `A` (OasisAPI)  </li><li> auth request </li></ul>  | User `A` is recreated and access Successful | Check  |
 | 13       | <ul><li> Create User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth with new credentials |Check that updating credentials works on inactive user |
-| 13       | <ul><li> Update User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth | Check that updating credentials works on active user |
+| 14       | <ul><li> Update User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth | Check that updating credentials works on active user |
 
 
