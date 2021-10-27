@@ -34,8 +34,7 @@ Run the platform using the default kubernetes helm charts (via minikube), this s
 | 11      | <ul><li> User `A`  </li><li> enable access (keycloak) </li><li> auth request  </li></ul> | User `A` access successful and `username_<keycloak-id>` is retained | Check that users can be enabled |
 | 12      | <ul><li> User `B` </li><li> Create an analysis </li></ul>  | Successful analysis creation | Using the portfolio from step `9` create a new analysis |
 | 13      | <ul><li> User `B`  </li><li> Delete user `B` (keycloak)  </li><li> auth request </li></ul> | User `B` access rejected | Check account access revoked |
-| 14      | <ul><li> User `A` </li><li> Delete user `A` (OasisAPI)  </li><li> auth request </li></ul>  | User `A` is recreated and access Successful | Check  |
-| 15      | <ul><li> Create User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth with new credentials |Check that updating credentials works on inactive user |
-| 16      | <ul><li> Update User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth | Check that updating credentials works on active user |
+| 14      | <ul><li> Create User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth with new credentials |Check that updating credentials works on inactive user |
+| 15      | <ul><li> Update User `B` (keycloak)</li><li> New credentials </li><li> auth request (OasisAPI) </li></ul>  |  Successful user auth | Check that updating credentials works on active user |
 
 
