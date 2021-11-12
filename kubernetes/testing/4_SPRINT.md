@@ -80,3 +80,8 @@ Create 1 portfolio per user
 - Use admin account to remove `4_revoked` from this user
 - Use admin account to delete the open objects
 - User cannot access any models, portfolios or analysis
+
+
+### to do 
+- Test data file adding / Access 
+- Test file linking between portfilios / analysis copy
