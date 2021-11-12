@@ -62,6 +62,7 @@ Create 1 portfolio per user
 - Can see portfolios (`open_portfolio`, `2_portfolio`, `3_portfolio`)
 - Can see and exec `open_analysis`
 - Cannot see, exec or access files from `1_analysis`
+- Is able to create `2_analysis` = (`2_piwind` + `2_portfolio`)
 - Is able to create `3_analysis` = (`3_piwind` + `3_portfolio`)
 - Is able to create `4_analysis` = (`2_piwind` + `3_portfolio`)
 - User can edit `2_portfolio` to remove/add the `2_inclusive` group
