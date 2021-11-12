@@ -36,12 +36,13 @@ Create 1 portfolio per user
 * 2_portfolio  (`2_user`)
 * 3_portfolio  (`3_user`)
 * 4_portfolio  (`4_user`)
-
+* 5_portfolio  (`admin`)
 
 ## Test each perfective
 
 ### (Admin)
 - The admin account can view and access everything
+- Add admin to `5_exclusive` group so it exisits In the Django DB
 - for each portfolio, check that the groups have defaulted to the correct group values per user
 
 
