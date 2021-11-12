@@ -16,7 +16,7 @@ Create the following groups:
 Create the following users connected to the groups
 * Admin
 * open_user  ( n/a )
-* 1_user  (`0_inclusive`)
+* 1_user  (`1_inclusive`)
 * 2_user  (`2_inclusive`, `3_shared`)
 * 3_user  (`3_shared`)
 * 4_user  (`4_revoked`)
@@ -31,7 +31,7 @@ Create the following models connected to groups
 
 
 Create 1 portfolio per user
-* 0_portfolio  (`0_user`)
+* open_portfolio  (`open_user`)
 * 1_portfolio  (`1_user`)
 * 2_portfolio  (`2_user`)
 * 3_portfolio  (`3_user`)
@@ -48,18 +48,18 @@ Create 1 portfolio per user
 ### (0_user)
 - Can see models (`open_piwind`)
 - Can see portfolios (`open_portfolio`)
-- Can create/exec an analysis  `0_analysis` = (`open_piwind` + `open_portfolio`)
+- Can create/exec an analysis  `open_analysis` = (`open_piwind` + `open_portfolio`)
 
 ### (1_user)
 - Can see models (`open_piwind`, `1_piwind`)
-- Can see portfolios (`0_portfolio`, `1_portfolio`)
-- Can see and exec `0_analysis`
+- Can see portfolios (`open_portfolio`, `1_portfolio`)
+- Can see and exec `open_analysis`
 - Create/exec `1_analysis` = (`1_piwind` + `1_portfolio`)
 
 ### (2_user)
 - Can see models (`open_piwind`, `2_piwind`, `3_piwind`)
-- Can see portfolios (`0_portfolio`, `2_portfolio`, `3_portfolio`)
-- Can see and exec `0_analysis`
+- Can see portfolios (`open_portfolio`, `2_portfolio`, `3_portfolio`)
+- Can see and exec `open_analysis`
 - Cannot see, exec or access files from `1_analysis`
 - Is able to create `3_analysis` = (`3_piwind` + `3_portfolio`)
 - Is able to create `4_analysis` = (`2_piwind` + `3_portfolio`)
@@ -67,7 +67,7 @@ Create 1 portfolio per user
 
 ### (3_user)
 - Can see models (`open_piwind`, `3_piwind`)
-- Can see portfolios (`0_portfolio` `2_portfolio`, `3_portfolio`,
+- Can see portfolios (`open_portfolio` `2_portfolio`, `3_portfolio`,
 - Can see but not exec `4_analysis`
 - Can see and exec `3_analysis`
 
