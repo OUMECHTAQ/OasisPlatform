@@ -46,7 +46,7 @@ Create 1 portfolio per user
 - for each portfolio, check that the groups have defaulted to the correct group values per user
 
 
-### (0_user)
+### (open_piwind)
 - Can see models (`open_piwind`)
 - Can see portfolios (`open_portfolio`)
 - Can create/exec an analysis  `open_analysis` = (`open_piwind` + `open_portfolio`)
