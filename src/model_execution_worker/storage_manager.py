@@ -6,6 +6,7 @@ import tarfile
 import tempfile
 import uuid
 
+from pathlib import Path
 from urllib.parse import urlparse
 from urllib.request import urlopen
 
@@ -168,13 +169,6 @@ class BaseStorageConnector(object):
 
         else:
             raise MissingInputsException(fpath)
-
-        #fpath = os.path.join(
-        #    self.media_root,
-        #    os.path.basename(reference)
-        #)
-        #logging.info('Get shared file: {}'.format(reference))
-        #return os.path.abspath(fpath)
 
     def extract(self, archive_fp, directory, storage_subdir=''):
         """ Extract tar file
